@@ -72,4 +72,13 @@
     </set>
     where account = #{account,jdbcType=VARCHAR}
   </update>
+  <update id="updatePassword" parameterType="zqh.model.Administrator">
+    update administrator
+    <set>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where account = #{account,jdbcType=VARCHAR}
+  </update>
 </mapper>

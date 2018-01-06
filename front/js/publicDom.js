@@ -49,6 +49,8 @@ var publicDom = {
 };
 
 var url = {
+	admin_password_update:"/admin/password/update",
+
 	alumnus_item : "/alumnus/item",
 
 	admin_alumnus_list : "/admin/alumnus/list/valid",

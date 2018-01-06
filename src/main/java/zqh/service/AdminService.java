@@ -27,4 +27,10 @@ public interface AdminService {
      */
     Administrator login(Administrator administrator);
 
+    /**
+     * 修改管理员密码
+     * @param administrator
+     */
+    void updatePassword(Administrator administrator);
+
 }

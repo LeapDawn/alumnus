@@ -8,4 +8,6 @@ public interface AdministratorDAO {
     Administrator selectOne(String account);
 
     int update(Administrator record);
+
+    int updatePassword(Administrator record);
 }

@@ -33,6 +33,22 @@ public class AdminController {
         return AjaxResult.success("修改管理员用户信息成功");
     }
 
+    @PutMapping("/password/update")
+    public AjaxResult updatePassword(@RequestBody Administrator administrator, HttpSession session) {
+        Administrator admin = (Administrator) session.getAttribute("admin");
+        if (admin != null) {
+            if (!admin.getPassword().equals(administrator.getAccount())) {
+                return AjaxResult.fail(204,"密码错误");
+            } else {
+                administrator.setAccount(admin.getAccount());
+                adminService.updatePassword(administrator);
+                return AjaxResult.success("修改管理员用户信息成功");
+            }
+        } else {
+            return AjaxResult.fail(2,"");
+        }
+    }
+
 
     @PostMapping("/login")
     public AjaxResult login(@RequestBody Administrator administrator, HttpSession session){

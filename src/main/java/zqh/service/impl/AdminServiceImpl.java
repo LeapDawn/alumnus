@@ -37,4 +37,9 @@ public class AdminServiceImpl implements AdminService {
         }
         return admin;
     }
+
+    @Override
+    public void updatePassword(Administrator administrator) {
+        adminDAO.updatePassword(administrator);
+    }
 }
