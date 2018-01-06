@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zqh.dao.ClazzAlumnusDAO">
+    <resultMap id="ClazzAlumnus" type="zqh.model.ClazzAlumnus">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="clazz" jdbcType="VARCHAR" property="clazz"/>
+        <result column="alumnus" jdbcType="INTEGER" property="alumnus"/>
+        <result column="admin" jdbcType="BIT" property="admin"/>
+    </resultMap>
+    <sql id="All_Column">
+        id, clazz, alumnus, admin
+    </sql>
+    <sql id="Alumnus_Column">
+        al.id, al.name, al.id_card, al.studentNo, al.nation, al.tel, al.college, al.major, al.birthday, al.enrol_date,
+        al.graduation_date, al.native_place, al.political_status, al.status, al.special
+    </sql>
+    <sql id="List_Where">
+        <where>
+            <if test="clazzAlumnus.clazz != null">
+                and ca.clazz = #{clazzAlumnus.clazz,jdbcType=BIT}
+            </if>
+        </where>
+    </sql>
+    <select id="selectByClazzAndAlumnus" parameterType="zqh.model.ClazzAlumnus" resultMap="ClazzAlumnus">
+        select distinct
+        <include refid="All_Column"/>
+        from clazz_alumnus
+        <where>
+            <if test="clazz != null and !&quot;&quot;.equals(clazz.trim())">
+                and clazz = #{clazz,jdbcType=VARCHAR}
+            </if>
+            <if test="alumnus != null">
+                and alumnus = #{alumnus,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+    <select id="selectByAlumnus" parameterType="zqh.model.ClazzAlumnus" resultMap="ClazzAlumnus">
+        select distinct
+        <include refid="All_Column"/>
+        from clazz_alumnus
+        <where>
+            <if test="alumnus != null">
+                and alumnus = #{alumnus,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+    <select id="count" parameterType="zqh.model.ClazzAlumnus" resultType="java.lang.Integer">
+        select count(*)
+        from clazz_alumnus ca
+        join alumnus al on ca.alumnus = al.id
+        <include refid="List_Where"/>
+    </select>
+    <select id="selectList" resultType="zqh.model.Alumnus">
+        select
+        <include refid="Alumnus_Column"/>
+        from clazz_alumnus ca
+        join alumnus al on ca.alumnus = al.id
+        <include refid="List_Where"/>
+        limit #{skip}, #{rows}
+    </select>
+    <delete id="deleteByClazzAndAlumnus" parameterType="zqh.model.ClazzAlumnus">
+        delete from clazz_alumnus
+        where clazz = #{clazz,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="zqh.model.ClazzAlumnus">
+        insert into clazz_alumnus
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="clazz != null">
+                clazz,
+            </if>
+            <if test="alumnus != null">
+                alumnus,
+            </if>
+            <if test="admin != null">
+                admin,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="clazz != null">
+                #{clazz,jdbcType=VARCHAR},
+            </if>
+            <if test="alumnus != null">
+                #{alumnus,jdbcType=INTEGER},
+            </if>
+            <if test="admin != null">
+                #{admin,jdbcType=BIT},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateAdmin" parameterType="zqh.model.ClazzAlumnus">
+        update clazz_alumnus
+        <set>
+            <if test="admin != null">
+                #{admin,jdbcType=BIT},
+            </if>
+        </set>
+        where clazz = #{clazz,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}
+    </update>
+</mapper>
