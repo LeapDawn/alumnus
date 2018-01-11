@@ -17,7 +17,10 @@
     <sql id="List_Where">
         <where>
             <if test="chapterAlumnus.chapter != null">
-                and ca.chapter = #{chapterAlumnus.chapter,jdbcType=BIT}
+                and ca.chapter = #{chapterAlumnus.chapter,jdbcType=VARCHAR}
+            </if>
+            <if test="chapterAlumnus.admin != null">
+                and ca.admin = #{chapterAlumnus.admin,jdbcType=BIT}
             </if>
         </where>
     </sql>
@@ -97,7 +100,7 @@
         update chapter_alumnus
         <set>
             <if test="admin != null">
-                #{admin,jdbcType=BIT},
+               admin =  #{admin,jdbcType=BIT},
             </if>
         </set>
         where chapter = #{chapter,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}

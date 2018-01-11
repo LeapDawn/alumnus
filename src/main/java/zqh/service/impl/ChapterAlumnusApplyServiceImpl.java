@@ -6,6 +6,7 @@ import zqh.commons.exception.DataViolationException;
 import zqh.dao.ChapterAlumnusApplyDAO;
 import zqh.dto.RequestList;
 import zqh.dto.ResultModel;
+import zqh.model.Alumnus;
 import zqh.model.ChapterAlumnus;
 import zqh.model.ChapterAlumnusApply;
 import zqh.service.ChapterAlumnusApplyService;
@@ -28,7 +29,7 @@ public class ChapterAlumnusApplyServiceImpl implements ChapterAlumnusApplyServic
         apply.setStatus(0);
         apply.setDate(new Date());
         ChapterAlumnusApply myApply = this.getMyApply(apply.getAlumnus());
-        if (myApply.getStatus() == 0) {
+        if (myApply != null && myApply.getStatus() == 0) {
             throw new DataViolationException(601, "已有待审核的加入校友分会申请!");
         }
         chapterAlumnusApplyDAO.insert(apply);
@@ -58,12 +59,12 @@ public class ChapterAlumnusApplyServiceImpl implements ChapterAlumnusApplyServic
     }
 
     @Override
-    public ResultModel<ChapterAlumnusApply> list(RequestList<ChapterAlumnusApply> rl) {
+    public ResultModel<Alumnus> list(RequestList<ChapterAlumnusApply> rl) {
         ChapterAlumnusApply key = rl.getKey();
         key = key != null ? key : new ChapterAlumnusApply();
         int total = chapterAlumnusApplyDAO.count(key);
-        ResultModel<ChapterAlumnusApply> resultModel = new ResultModel<>(total, rl.getRows(), rl.getPage());
-        List<ChapterAlumnusApply> list = chapterAlumnusApplyDAO.selectList(rl.getKey(),
+        ResultModel<Alumnus> resultModel = new ResultModel<>(total, rl.getRows(), rl.getPage());
+        List<Alumnus> list = chapterAlumnusApplyDAO.selectList(rl.getKey(),
                 (resultModel.getCurrentPage() - 1) * resultModel.getRows(), resultModel.getRows());
         resultModel.setData(list);
         return resultModel;

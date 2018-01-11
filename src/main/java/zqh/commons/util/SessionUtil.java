@@ -22,7 +22,7 @@ public class SessionUtil {
         if (user.getAlumnus() != null){
             return user.getAlumnus();
         } else{
-            throw new DataViolationException(1, "");
+            throw new DataViolationException(305, "");
         }
     }
 

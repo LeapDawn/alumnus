@@ -2,6 +2,7 @@ package zqh.service;
 
 import zqh.dto.RequestList;
 import zqh.dto.ResultModel;
+import zqh.model.Alumnus;
 import zqh.model.ChapterAlumnusApply;
 
 /**
@@ -39,5 +40,5 @@ public interface ChapterAlumnusApplyService {
      * @param rl
      * @return
      */
-    ResultModel<ChapterAlumnusApply> list(RequestList<ChapterAlumnusApply> rl);
+    ResultModel<Alumnus> list(RequestList<ChapterAlumnusApply> rl);
 }

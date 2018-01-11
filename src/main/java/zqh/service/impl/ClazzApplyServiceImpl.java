@@ -14,6 +14,7 @@ import zqh.service.ClazzAlumnusService;
 import zqh.service.ClazzService;
 import zqh.service.ClazzApplyService;
 
+import java.util.Date;
 import java.util.List;
 
 @Service("clazzApplyService")
@@ -31,10 +32,15 @@ public class ClazzApplyServiceImpl implements ClazzApplyService {
     @Override
     public void apply(ClazzApply clazzApply) {
         ClazzApply myApply = this.getMyApply(clazzApply.getAlumnus());
-        if (myApply != null && myApply.getStatus() == 1) {
+        if (myApply != null && myApply.getStatus() == 0) {
             throw new DataViolationException(501,"已有待审核的建立校友班级申请");
         }
+        ClazzApply apply = clazzApplyDAO.selectByName(clazzApply.getName());
+        if (apply != null) {
+            throw new DataViolationException(509,"已有同名的待审核的建立校友班级申请");
+        }
         clazzApply.setStatus(0);
+        clazzApply.setDate(new Date());
         clazzApplyDAO.insert(clazzApply);
     }
 

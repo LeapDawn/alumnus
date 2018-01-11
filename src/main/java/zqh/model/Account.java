@@ -1,5 +1,8 @@
 package zqh.model;
 
+import lombok.ToString;
+
+@ToString
 public class Account {
     private String accounts;
 

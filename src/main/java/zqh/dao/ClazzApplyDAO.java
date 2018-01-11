@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface ClazzApplyDAO {
 
+    ClazzApply selectByName(String name);
+
     ClazzApply selectByAdder(Integer alumnus);
 
     ClazzApply selectById(Integer id);

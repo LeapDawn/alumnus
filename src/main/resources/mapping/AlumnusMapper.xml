@@ -21,7 +21,7 @@
     </resultMap>
     <sql id="All_Columns">
         id, name, id_card, studentNo, nation, tel, college, major, birthday, enrol_date,
-        graduation_date, native_place, political_status, status, special
+        graduation_date, native_place, political_status, status, special, invalid
     </sql>
     <sql id="Open_Columns">
         id, name, studentNo, nation, tel, college, major, birthday, enrol_date,
@@ -76,7 +76,7 @@
         select
         <include refid="All_Columns"/>
         from alumnus
-        where id = #{id,jdbcType=INTEGER} and invalid = 0
+        where id = #{id,jdbcType=INTEGER}
     </select>
     <select id="selectOpenById" parameterType="java.lang.Integer" resultMap="Alumnus">
         select
@@ -87,7 +87,7 @@
     <select id="selectOneByNameAndCard" parameterType="zqh.model.Alumnus" resultType="java.lang.Integer">
         select id from alumnus
         where name = #{name,jdbcType=VARCHAR}
-        and id_card = #{id_card,jdbcType=VARCHAR}
+        and id_card = #{idCard,jdbcType=VARCHAR}
     </select>
     <delete id="delete" parameterType="java.lang.Integer">
         delete from alumnus

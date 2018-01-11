@@ -12,26 +12,19 @@ var publicDom = {
 			data: param,		
 			async: isAsync !== false,
 			contentType: "application/json",  
-		    processData: false,  
+		    processData: false,
+		    xhrFields: {
+            withCredentials: true
+       		 },
+       		crossDomain: true,
 			success: function(data) {		
 				var jsonData;
-				// console.info($.parseJSON(data));
-				// try{
-				// 	jsonData = $.parseJSON(data);
-				// }catch(e) { // 返回值不是json格式
-				// 	console.log(11111);
-				// 	if(typeof f !== 'function') { // 如果没有回调函数,抛出异常。
-				// 		throw new Error('请求数据之后，没有回调函数!');
-				// 	}
-				// 	f(data);
-				// 	if (data.code == -1) {
-				// 		window.location.href = rootUrl + "/login.html";
-				// 	}
-				// 	return;
-				// }
 				if(data.code===1){
-					//超时或者存在
-					window.location.href = rootUrl + "/login.html";
+					//未登录
+					window.location.href = "login.html";
+				} else if (data.code === 2){
+					//管理人员未登录
+					window.location.href = "admin_login.html";
 				} else {
 					if(typeof f !== 'function') { // 如果没有回调函数,抛出异常。
 
@@ -41,7 +34,7 @@ var publicDom = {
 				}
 			},
 			error: function(xhr,textStatus) {
-				console.log(5);
+				console.log('连接服务器失败!');
 			}
 		};
 		$.ajax(ajaxParam);
@@ -50,8 +43,18 @@ var publicDom = {
 
 var url = {
 	admin_password_update:"/admin/password/update",
+	admin_login:'/admin/login',
+	admin_logout:'/admin/logout',
+
+	password_update:"/account/password",
+	login:'/account/login',
+	logout:'/account/logout',
+
+	signup:'/account/register',
 
 	alumnus_item : "/alumnus/item",
+	alumnus_bind : '/account/bind',
+	alumnus_addition: "/alumnus/addition",
 
 	admin_alumnus_list : "/admin/alumnus/list/valid",
 	admin_alumnus_addition : "/admin/alumnus/addition",
@@ -67,8 +70,27 @@ var url = {
 	apply_approve:"/admin/alumnus/update/valid",
 	apply_disapprove:"/admin/alumnus/update/invalid",
 
+	alumnus_list:"/alumnus/list/valid",
+	myinfo_update : "/alumnus/update",
+	myinfo : "/alumnus/info",
+
 	chapter_list : "/chapter/list",
 	chapter_item : "/chapter/item",
+	chapter_update : "/chapter/update",
+	mychapter:"/chapter/alumnus/mine",
+	isChapterAdmin:"/chapter/alumnus/isAdmin",
+	chapter_appoint:"/chapter/alumnus/admin/appoint",
+    chapter_hasJoined : "/chapter/alumnus/joined",
+
+    applyChapterAlumnus:"/chapter/alumnus/apply",
+    applyChapter:"/chapter/apply",
+    mychapter_alumnus_apply:"/chapter/alumnus/apply/mine",
+    mychapter_apply:"/chapter/apply/status",
+
+    chapter_alumnus_list:"/chapter/alumnus/admin/apply/list",
+    chapter_alumnus_approve:"/chapter/alumnus/admin/apply/approve",
+    chapter_alumnus_disapprove:"/chapter/alumnus/admin/apply/disapprove",
+    chapter_alumnus_leave:"/chapter/alumnus/leave",
 
 	chapter_apply_list:"/admin/chapter/apply/list",
 	chapter_apply_approve:"/admin/chapter/apply/approve",
@@ -78,6 +100,21 @@ var url = {
 
 	clazz_list : "/clazz/list",
 	clazz_item : "/clazz/item",
+	clazz_update : "/clazz/update",
+	myclazz:"/clazz/alumnus/mine",
+	isClazzAdmin:"/clazz/alumnus/isAdmin",
+	clazz_appoint:"/clazz/alumnus/admin/appoint",
+    clazz_hasJoined : "/clazz/alumnus/joined",
+
+    applyClazzAlumnus:"/clazz/alumnus/apply",
+    applyClazz:"/clazz/apply",
+    myclazz_alumnus_apply:"/clazz/alumnus/apply/mine",
+    myclazz_apply:"/clazz/apply/status",
+
+    clazz_alumnus_list:"/clazz/alumnus/admin/apply/list",
+    clazz_alumnus_approve:"/clazz/alumnus/admin/apply/approve",
+    clazz_alumnus_disapprove:"/clazz/alumnus/admin/apply/disapprove",
+    clazz_alumnus_leave:"/clazz/alumnus/leave",
 
 	clazz_apply_list:"/admin/clazz/apply/list",
 	clazz_apply_approve:"/admin/clazz/apply/approve",
@@ -134,8 +171,7 @@ var showConfirmModal = function(info,status,msgBody){
 					      '</div>'+
 					   '</div>'+
 					'</div>';
-	}
-	else{
+	} else{
 		gobalModal = '<button type="button" id="confirmBtn" class="btn btn-default comFirmModal hide" data-toggle = "modal" data-target = "#confirm">确定</button>'+
 			'<div class = "modal fade" id = "confirm" tabindex = "-1" role = "dialog" aria-labelledby = "myModalLabel" aria-hidden = "true">'+
 				'<div class = "modal-dialog">'+
@@ -155,3 +191,4 @@ var showConfirmModal = function(info,status,msgBody){
 	$("body").append(gobalModal);
 	$("#confirmBtn").trigger('click');
 }
+

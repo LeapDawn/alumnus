@@ -1,5 +1,7 @@
 package zqh.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class ChapterApply {
@@ -11,6 +13,7 @@ public class ChapterApply {
 
     private String content;
 
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date date;
 
     private Integer status;

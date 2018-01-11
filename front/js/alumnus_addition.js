@@ -34,7 +34,7 @@ M_table.addItem = function(){
 	}
 	var jsonStr = JSON.stringify(param);
 
-	publicDom.getDatal('post',newURL,jsonStr,function(data){
+	publicDom.getData('post',newURL,jsonStr,function(data){
 		if(data.code==0){
 			M_table.showConfirmModal('成功','success','新增校友信息成功！');
 			$('.confirm').click(function() {

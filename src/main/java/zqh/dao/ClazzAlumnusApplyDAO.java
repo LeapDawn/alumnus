@@ -1,6 +1,7 @@
 package zqh.dao;
 
 import org.apache.ibatis.annotations.Param;
+import zqh.model.Alumnus;
 import zqh.model.ClazzAlumnusApply;
 
 import java.util.List;
@@ -12,7 +13,7 @@ public interface ClazzAlumnusApplyDAO {
 
     ClazzAlumnusApply selectById(Integer id);
 
-    List<ClazzAlumnusApply> selectList(@Param("apply") ClazzAlumnusApply apply, @Param("skip") int skip, @Param("rows") int rows);
+    List<Alumnus> selectList(@Param("apply") ClazzAlumnusApply apply, @Param("skip") int skip, @Param("rows") int rows);
 
     Integer count(@Param("apply") ClazzAlumnusApply apply);
 

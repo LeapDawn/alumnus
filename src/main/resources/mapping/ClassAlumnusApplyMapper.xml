@@ -7,14 +7,12 @@
         <result column="alumnus" jdbcType="INTEGER" property="alumnus"/>
         <result column="status" jdbcType="INTEGER" property="status"/>
         <result column="date" jdbcType="DATE" property="date"/>
-        <association property="alumnusEntity" column="alumnus" resultMap="zqh.model.Alumnus"/>
     </resultMap>
     <sql id="All_Column">
         id, clazz, alumnus, status, date
     </sql>
     <sql id="Join_Column">
-        caa.id, caa.clazz, caa.alumnus, caa.status, caa.date,
-        a.id, a.name, a.studentNo, a.nation, a.tel, a.college, a.major, a.birthday, a.enrol_date,
+        caa.id, a.name, a.studentNo, a.nation, a.tel, a.college, a.major, a.birthday, a.enrol_date,
         a.graduation_date, a.native_place, a.political_status, a.status
     </sql>
     <select id="selectByAlumnus" parameterType="java.lang.Integer" resultMap="ClazzAlumnusApply">
@@ -30,12 +28,12 @@
         from clazz_alumnus_apply
         where id = #{id,jdbcType=INTEGER}
     </select>
-    <select id="selectList" resultType="ClazzAlumnusApply">
+    <select id="selectList" resultType="zqh.model.Alumnus">
         select
         <include refid="Join_Column"/>,
         from clazz_alumnus_apply caa
         join alumnus a on caa.alumnus = a.id
-        where caa.clazz = #{apply.clazz,jdbcType=VARCHAR}
+        where caa.clazz = #{apply.clazz,jdbcType=VARCHAR} and caa.status = 0
         limit #{skip},#{rows}
     </select>
     <select id="count" parameterType="zqh.model.ClazzAlumnusApply" resultType="java.lang.Integer">
@@ -43,7 +41,7 @@
         count(*)
         from clazz_alumnus_apply caa
         join alumnus a on caa.alumnus = a.id
-        where caa.clazz = #{apply.clazz,jdbcType=VARCHAR}
+        where caa.clazz = #{apply.clazz,jdbcType=VARCHAR} and caa.status = 0
     </select>
 
     <insert id="insert" parameterType="zqh.model.ClazzAlumnusApply">
@@ -79,13 +77,13 @@
                 #{status,jdbcType=INTEGER},
             </if>
             <if test="date != null">
-                #{status,jdbcType=DATE},
+                #{date,jdbcType=DATE},
             </if>
         </trim>
     </insert>
     <update id="updateStatus" parameterType="zqh.model.ClazzAlumnusApply">
         update clazz_alumnus_apply
-        status = #{status,jdbcType=INTEGER}
+        set status = #{status,jdbcType=INTEGER}
         where id = #{id,jdbcType=INTEGER}
     </update>
 </mapper>

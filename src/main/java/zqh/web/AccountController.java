@@ -2,6 +2,7 @@ package zqh.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import zqh.commons.Const;
 import zqh.commons.util.SessionUtil;
 import zqh.dto.AjaxResult;
 import zqh.model.Account;
@@ -47,17 +48,23 @@ public class AccountController {
     @PostMapping("/login")
     public AjaxResult login(@RequestBody Account account, HttpSession session){
         Account login = accountService.login(account);
-        session.setAttribute("user", login);
+        session.setAttribute(Const.SESSION_ACCOUNT, login);
         if (login.getAlumnus() != null) {
             Alumnus alumnus = alumnusService.selectOne(login.getAlumnus());
             session.setAttribute("invalid", alumnus.getInvalid());
+            if (alumnus != null && alumnus.getInvalid() != null && alumnus.getInvalid() == 0) {
+                return AjaxResult.success("");
+            } else {
+                return AjaxResult.fail(305, "");
+            }
+        } else {
+            return AjaxResult.fail(305, "");
         }
-        return AjaxResult.success("登陆成功");
     }
 
     @GetMapping("/logout")
     public AjaxResult logout(HttpSession session){
-        session.removeAttribute("user");
+        session.removeAttribute(Const.SESSION_ACCOUNT);
         return AjaxResult.success("退出登陆成功");
     }
 

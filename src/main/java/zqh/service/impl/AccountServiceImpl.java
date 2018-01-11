@@ -44,10 +44,7 @@ public class AccountServiceImpl implements AccountService {
     public void bind(String account, Alumnus alumnus) {
         Integer id = alumnusService.selectOneByNameAndCard(alumnus);
         if (id == null) {
-            alumnus.setInvalid(1);
-            alumnus.setSpecial(false);
-            alumnusService.save(alumnus);
-            throw new DataViolationException(303, "校友信息库中不存在您的信息，已提交数据等待管理员审核");
+            throw new DataViolationException(303, "校友信息库中不存在您的信息，请输入详细数据并提交与管理员审核!");
         } else {
             Account record = new Account();
             record.setAccounts(account);

@@ -25,6 +25,13 @@
         where alumnus = #{alumnus,jdbcType=INTEGER}
         order by date desc limit 0,1
     </select>
+    <select id="selectByName" parameterType="java.lang.String" resultMap="ChapterApply">
+        select
+        <include refid="All_Column"/>
+        from chapter_apply
+        where status=0 and name = #{name,jdbcType=INTEGER}
+        order by date desc limit 0,1
+    </select>
     <select id="selectListByStatus" resultMap="ChapterApply">
         select
         <include refid="All_Column"/>

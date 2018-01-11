@@ -3,6 +3,7 @@ package zqh.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import zqh.commons.Const;
 import zqh.commons.util.SessionUtil;
 import zqh.dto.AjaxResult;
 import zqh.dto.RequestList;
@@ -36,7 +37,7 @@ public class AlumnusCustomController {
             accountService.updateAlumnus(account);
             return AjaxResult.success("绑定校友信息成功,等待管理员审核");
         } else {
-            return AjaxResult.fail(2, "您已经绑定校友信息了！");
+            return AjaxResult.fail(901, "您已经绑定过校友信息了！");
         }
     }
 
@@ -46,8 +47,8 @@ public class AlumnusCustomController {
         alumnus.setId(account.getAlumnus());
         alumnusService.update(alumnus);
         Integer invalid = (Integer)session.getAttribute("invalid");
-        // 审核不通过的情况下，重新提交信息，将审核状态重置为未审核
-        if (invalid != null && invalid == 2) {
+        // 审核不通过的情况下，重新提交信息，将审核状态重置为未审核(未审核时可修改信息)
+        if (invalid != null && (invalid == 2 || invalid == 1)) {
             alumnusService.updateInvalid(alumnus.getId(), 1);
             session.setAttribute("invalid", 1);
         }
@@ -60,8 +61,14 @@ public class AlumnusCustomController {
         return AjaxResult.success(list);
     }
 
-    @RequestMapping("/item")
+    @GetMapping("/item")
     public AjaxResult getAlumnus(@RequestParam("id") Integer id){
         return AjaxResult.success(alumnusService.selectOne(id));
+    }
+
+    @GetMapping("/info")
+    public AjaxResult getAlumnus(HttpSession session){
+        Integer alumnus = SessionUtil.getUserAlumnus(session);
+        return AjaxResult.success(alumnusService.selectOne(alumnus));
     }
 }

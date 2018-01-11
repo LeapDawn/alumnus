@@ -56,7 +56,7 @@ public class ChapterAlumnusServiceImpl implements ChapterAlumnusService {
     @Override
     public boolean isAdmin(ChapterAlumnus chapterAlumnus) {
         ChapterAlumnus record = chapterAlumnusDAO.selectByChapterAndAlumnus(chapterAlumnus);
-        return  record.getAdmin();
+        return record == null ? false : record.getAdmin();
     }
 
     @Override

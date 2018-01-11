@@ -36,5 +36,5 @@ public interface AccountService{
      * 为账号绑定校友信息
      * @param account
      */
-    public void updateAlumnus(Account account);
+    void updateAlumnus(Account account);
 }

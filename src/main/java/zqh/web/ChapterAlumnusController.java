@@ -6,7 +6,6 @@ import zqh.commons.util.SessionUtil;
 import zqh.dto.AjaxResult;
 import zqh.dto.RequestList;
 import zqh.dto.ResultModel;
-import zqh.model.Account;
 import zqh.model.Alumnus;
 import zqh.model.ChapterAlumnus;
 import zqh.model.ChapterAlumnusApply;
@@ -32,7 +31,7 @@ public class ChapterAlumnusController {
         chapterAlumnusApply.setAlumnus(alumnus);
         chapterAlumnusApplyService.apply(chapterAlumnusApply);
         return AjaxResult.success("申请加入校友分会成功，等待管理员审核！");
-    }
+}
 
     @DeleteMapping("/leave")
     public AjaxResult leave(@RequestParam("chapter") String chapter, HttpSession session) {
@@ -57,7 +56,7 @@ public class ChapterAlumnusController {
     }
 
     @GetMapping("/apply/mine")
-    public AjaxResult myAppaly(HttpSession session){
+    public AjaxResult myApply(HttpSession session){
         Integer alumnus = SessionUtil.getUserAlumnus(session);
         return AjaxResult.success(chapterAlumnusApplyService.getMyApply(alumnus));
     }

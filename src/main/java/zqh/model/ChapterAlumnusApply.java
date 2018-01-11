@@ -1,5 +1,7 @@
 package zqh.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.Date;
 
 public class ChapterAlumnusApply {
@@ -11,6 +13,7 @@ public class ChapterAlumnusApply {
 
     private Integer status;
 
+    @JsonFormat(pattern="yyyy-MM-dd")
     private Date date;
 
     private Alumnus alumnusEntity;

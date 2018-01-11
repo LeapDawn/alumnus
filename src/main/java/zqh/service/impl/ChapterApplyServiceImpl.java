@@ -14,6 +14,7 @@ import zqh.service.ChapterAlumnusService;
 import zqh.service.ChapterApplyService;
 import zqh.service.ChapterService;
 
+import java.util.Date;
 import java.util.List;
 
 @Service("chapterApplyService")
@@ -31,10 +32,15 @@ public class ChapterApplyServiceImpl implements ChapterApplyService {
     @Override
     public void apply(ChapterApply chapterApply) {
         ChapterApply myApply = this.getMyApply(chapterApply.getAlumnus());
-        if (myApply != null && myApply.getStatus() == 1) {
+        if (myApply != null && myApply.getStatus() == 0) {
             throw new DataViolationException(501,"已有待审核的建立校友分会申请");
         }
+        ChapterApply apply = chapterApplyDAO.selectByName(chapterApply.getName());
+        if (apply != null) {
+            throw new DataViolationException(509,"已有同名的待审核的建立校友分会申请");
+        }
         chapterApply.setStatus(0);
+        chapterApply.setDate(new Date());
         chapterApplyDAO.insert(chapterApply);
     }
 

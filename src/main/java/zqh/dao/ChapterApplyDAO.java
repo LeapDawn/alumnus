@@ -9,6 +9,8 @@ public interface ChapterApplyDAO {
 
     ChapterApply selectByAdder(Integer alumnus);
 
+    ChapterApply selectByName(String name);
+
     ChapterApply selectById(Integer id);
 
     List<ChapterApply> selectListByStatus(@Param("status") Integer status, @Param("skip")int skip, @Param("rows")int rows);

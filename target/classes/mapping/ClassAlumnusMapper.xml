@@ -17,7 +17,10 @@
     <sql id="List_Where">
         <where>
             <if test="clazzAlumnus.clazz != null">
-                and ca.clazz = #{clazzAlumnus.clazz,jdbcType=BIT}
+                and ca.clazz = #{clazzAlumnus.clazz,jdbcType=VARCHAR}
+            </if>
+            <if test="clazzAlumnus.admin != null">
+                and ca.admin = #{clazzAlumnus.admin,jdbcType=BIT}
             </if>
         </where>
     </sql>

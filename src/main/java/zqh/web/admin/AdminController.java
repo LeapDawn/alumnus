@@ -9,7 +9,7 @@ import zqh.service.AdminService;
 
 import javax.servlet.http.HttpSession;
 
-@Controller
+@RestController
 @CrossOrigin
 @RequestMapping("/admin")
 public class AdminController {
