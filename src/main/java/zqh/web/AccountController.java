@@ -51,7 +51,7 @@ public class AccountController {
         session.setAttribute(Const.SESSION_ACCOUNT, login);
         if (login.getAlumnus() != null) {
             Alumnus alumnus = alumnusService.selectOne(login.getAlumnus());
-            session.setAttribute("invalid", alumnus.getInvalid());
+            session.setAttribute(Const.SESSION_ALUMNUS_INVALID, alumnus.getInvalid());
             if (alumnus != null && alumnus.getInvalid() != null && alumnus.getInvalid() == 0) {
                 return AjaxResult.success("");
             } else {

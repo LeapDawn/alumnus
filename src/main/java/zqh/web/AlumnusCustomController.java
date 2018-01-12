@@ -46,7 +46,7 @@ public class AlumnusCustomController {
         Account account = SessionUtil.getUser(session);
         alumnus.setId(account.getAlumnus());
         alumnusService.update(alumnus);
-        Integer invalid = (Integer)session.getAttribute("invalid");
+        Integer invalid = SessionUtil.getAlumnusInvalid(session);
         // 审核不通过的情况下，重新提交信息，将审核状态重置为未审核(未审核时可修改信息)
         if (invalid != null && (invalid == 2 || invalid == 1)) {
             alumnusService.updateInvalid(alumnus.getId(), 1);
@@ -62,7 +62,7 @@ public class AlumnusCustomController {
     }
 
     @GetMapping("/item")
-    public AjaxResult getAlumnus(@RequestParam("id") Integer id){
+    public AjaxResult getAlumnusByAdminOrAccount(@RequestParam("id") Integer id){
         return AjaxResult.success(alumnusService.selectOne(id));
     }
 

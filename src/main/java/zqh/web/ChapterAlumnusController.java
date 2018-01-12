@@ -50,7 +50,7 @@ public class ChapterAlumnusController {
     }
 
     @PostMapping("/member")
-    public AjaxResult member(@RequestBody RequestList<ChapterAlumnus> requestList) {
+    public AjaxResult memberByAdminOrAccount(@RequestBody RequestList<ChapterAlumnus> requestList) {
         ResultModel<Alumnus> alumnusResultModel = chapterAlumnusService.listAlumnus(requestList);
         return AjaxResult.success(alumnusResultModel);
     }

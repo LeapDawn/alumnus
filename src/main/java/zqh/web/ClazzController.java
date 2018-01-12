@@ -40,14 +40,13 @@ public class ClazzController {
     }
 
     @PostMapping("/list")
-    public AjaxResult list(@RequestBody RequestList<Clazz> requestList) {
-        Clazz key = requestList.getKey();
+    public AjaxResult listByAdminOrAccount(@RequestBody RequestList<Clazz> requestList) {
         ResultModel<Clazz> list = clazzService.list(requestList);
         return AjaxResult.success(list);
     }
 
     @GetMapping("/item")
-    public AjaxResult getByName(@RequestParam("item") String name) {
+    public AjaxResult getByNameByAdminOrAccount(@RequestParam("item") String name) {
         return AjaxResult.success(clazzService.selectOne(name));
     }
 

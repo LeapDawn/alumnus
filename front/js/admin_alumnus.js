@@ -7,11 +7,11 @@ $(function(){
 var M_table = {
 	url: publicDom.config.url,
 	init:function(){},
-	//getList:function(curr){},
 	createList:function(JsonData){},
 	showConfirmModal:showConfirmModal,
 	deleteItem:function(){},
-	getList:function(){},
+	getList:function(curr){},
+	upload:function(){}
 }
 
 M_table.init = function () {
@@ -98,6 +98,16 @@ M_table.deleteItem = function(id) {
 
 }
 
+M_table.upload = function(){
+	var newURL = M_table.url + url.admin_alumnus_upload;
+	 $.ajax({
+        url: newURL,
+        type: 'post',
+        enctype: 'multipart/form-data',
+        data: file,
+    })
+}
+
 
 var bindEvent = function () {
 
@@ -105,13 +115,7 @@ var bindEvent = function () {
 		M_table.getList();
 	});
 
-	// $('#search').click(function() {
-	// 	M_table.getList();
-	// });
-
-	// $('#filter').on('keyup', function() {
-	// 	  M_table.getList();
-	// });
-
-	
+	$('.upload').click(function(){
+		$('#file').trigger('click');
+	});	
 }

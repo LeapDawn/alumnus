@@ -72,8 +72,3 @@ C_table.hasJoined = function(){
 	})
 }
 
-
-var bindEvent = function () {
-
-
-}

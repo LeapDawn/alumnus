@@ -2,7 +2,9 @@ package zqh.commons.util;
 
 import zqh.commons.Const;
 import zqh.commons.exception.DataViolationException;
+import zqh.commons.exception.NoLoginException;
 import zqh.model.Account;
+import zqh.model.Administrator;
 
 import javax.servlet.http.HttpSession;
 
@@ -13,7 +15,7 @@ public class SessionUtil {
         if (user != null) {
             return user;
         } else {
-            throw new DataViolationException(1,"");
+            throw new NoLoginException(1,"");
         }
     }
 
@@ -24,6 +26,20 @@ public class SessionUtil {
         } else{
             throw new DataViolationException(305, "");
         }
+    }
+
+    public static Administrator getAdmin(HttpSession session){
+        Administrator administrator = (Administrator) session.getAttribute(Const.SESSION_ADMIN);
+        if (administrator != null) {
+            return administrator;
+        } else {
+            throw new NoLoginException(2,"");
+        }
+    }
+
+    public static Integer getAlumnusInvalid(HttpSession session) {
+        Integer valid = (Integer)session.getAttribute(Const.SESSION_ALUMNUS_INVALID);
+        return valid;
     }
 
 }

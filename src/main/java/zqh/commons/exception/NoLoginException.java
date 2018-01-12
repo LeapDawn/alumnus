@@ -2,9 +2,6 @@ package zqh.commons.exception;
 
 import lombok.Getter;
 
-/**
- * Created by cody on 2017/9/4.
- */
 public class NoLoginException extends RuntimeException{
 
     private static final long serialVersionUID = 1L;

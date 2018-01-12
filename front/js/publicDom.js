@@ -60,6 +60,7 @@ var url = {
 	admin_alumnus_addition : "/admin/alumnus/addition",
 	alumnus_deleteion : "/admin/alumnus/deletion",
 	admin_alumnus_update : "/admin/alumnus/update",
+	admin_alumnus_upload : "/admin/alumnus/upload",
 
 	admin_spalumnus_list : "/admin/alumnus/sp/list",
 	admin_spalumnus_addition : "/admin/alumnus/sp/addition",

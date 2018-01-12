@@ -1,6 +1,6 @@
 $(function(){
 	Logout.init();
-	bindEvent();
+	LogoutbindEvent();
 })
 
 var Logout = {
@@ -30,7 +30,7 @@ Logout.logout = function() {
 }
 
 
-var bindEvent = function () {
+var LogoutbindEvent = function () {
 	$('#logout').click(function(){
 		Logout.logout();
 	});

@@ -93,9 +93,10 @@
   				<div class="panel-body">
   					<div class="col-md-2">
   						<a href="admin_alumnus_addition.html" class="btn btn-info btn-sm" style="padding: 6px 13px;"><span class="glyphicon glyphicon-plus"></span> 新增</a>
-  						<a href="#" class="btn btn-info btn-sm" style="padding: 6px 13px;">
+  						<!-- <a href="#" class="btn btn-info btn-sm upload" style="padding: 6px 13px;">
 				          <span class="glyphicon glyphicon-upload"></span> 导入
-				        </a>
+				        </a> -->
+                <input id="file" type="file" style="display: none;" />
   					</div>
   					<div class="col-md-2 pull-right input-group form">
 	                       <input id="search_input" type="text" class="form-control" placeholder="Search...">
@@ -124,6 +125,52 @@
 			         </table>
 			         <div  id="alumnus_page" align="right" style="margin:30px 0px 20px 0;"></div>
   					</div>
+
+<!-- <button type="button" id="import_err_Btn" class="btn btn-default comFirmModal hide" data-toggle = "modal" data-target = "#myModal"></button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg" role="document" style="width:95%;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title text-primary" id="myModalLabel"><span class="fa fa-warning"></span> 以下为失败项以及错误信息：
+              &nbsp;&nbsp;<b></b>
+            </h4>
+          </div>
+          <div class="modal-body " style="padding-left:20px;padding-right:20px;padding-bottom:0;height:460px;overflow:auto;">
+            
+            <table class="table table-bordered tableInsert">
+          <thead>
+            <tr>
+              <th>名称</th>
+              <th>类别</th>
+              <th>单位</th>
+              <th>规格</th>
+              <th>型号</th>
+              <th>来源</th>
+              <th>最低库存</th>
+              <th>最高库存</th>
+              <th>安全库存</th>
+              <th>参考单价</th>
+              <th>货币</th>
+              <th>错误信息</th>
+            </tr>
+          </thead>
+
+          <tbody>
+          </tbody>
+         
+        </table>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-primary confirmSelect" data-dismiss="modal">确定</button><!-- 
+            <button type="button" class="btn btn-default cancel" data-dismiss="modal">取消</button> -->
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
   				</div>
   			</div>
 		  </div>

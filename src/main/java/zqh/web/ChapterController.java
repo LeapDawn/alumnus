@@ -40,14 +40,14 @@ public class ChapterController {
     }
 
     @PostMapping("/list")
-    public AjaxResult list(@RequestBody RequestList<Chapter> requestList) {
+    public AjaxResult listByAdminOrAccount(@RequestBody RequestList<Chapter> requestList) {
         Chapter key = requestList.getKey();
         ResultModel<Chapter> list = chapterService.list(requestList);
         return AjaxResult.success(list);
     }
 
     @GetMapping("/item")
-    public AjaxResult getByName(@RequestParam("item") String name) {
+    public AjaxResult getByNameByAdminOrAccount(@RequestParam("item") String name) {
         return AjaxResult.success(chapterService.selectOne(name));
     }
 

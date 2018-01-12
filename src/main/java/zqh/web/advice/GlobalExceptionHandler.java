@@ -21,16 +21,10 @@ import javax.servlet.http.HttpServletResponse;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-//    @ExceptionHandler(NoLoginException.class)
-//    public AjaxResult NoLoginExceptionHandler(NoLoginException e, HttpServletResponse response) {
-////        try {
-////            response.sendRedirect("/login.html");
-////        } catch (IOException e1) {
-////            e1.printStackTrace();
-////        }
-////        return new ModelAndView("redirect:/login.html");
-//        return AjaxResult.fail(-1, "登录失败");
-//    }
+    @ExceptionHandler(NoLoginException.class)
+    public AjaxResult NoLoginExceptionHandler(NoLoginException e, HttpServletResponse response) {
+        return AjaxResult.fail(1, "登录失败");
+    }
 
     @ExceptionHandler(DuplicateKeyException.class)
     @ResponseBody

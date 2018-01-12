@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="alumnus" />
+      <artifact name="Alumnus:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -31,67 +31,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AlumnusCustomController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/AlumnusCustomController.java">
+      <file leaf-file-name="GlobalUserAop.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/aop/GlobalUserAop.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/AccountController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1320">
-              <caret line="54" column="63" lean-forward="false" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlumnusServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/AlumnusServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-              <folding>
-                <element signature="e#1412#1413#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AlumnusMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/AlumnusMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="24" column="10" lean-forward="true" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-              <folding>
-                <marker date="1515652021125" expanded="true" signature="2970:3014" ph="select count... alumnus" />
-                <marker date="1515652021125" expanded="true" signature="3135:3275" ph="select from alumnus" />
-                <marker date="1515652021125" expanded="true" signature="3361:3409" ph="select count... alumnus" />
-                <marker date="1515652021125" expanded="true" signature="3488:3602" ph="select from alumnus" />
-                <marker date="1515652021125" expanded="true" signature="3708:3816" ph="select from alumnus" />
-                <marker date="1515652021125" expanded="true" signature="3926:4051" ph="select from alumnus" />
-                <marker date="1515652021125" expanded="true" signature="4180:4297" ph="select id fr... alumnus" />
-                <marker date="1515652021125" expanded="true" signature="4379:4440" ph="delete from " />
-                <marker date="1515652021125" expanded="true" signature="7837:9322" ph="update alumn... " />
-                <marker date="1515652021125" expanded="true" signature="9411:9501" ph="update alumn... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SessionUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/commons/util/SessionUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="394">
+              <caret line="47" column="11" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="47" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NoLoginException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/commons/exception/NoLoginException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding>
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,61 +59,9 @@
       <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2570#2571#0" expanded="true" />
-                <element signature="e#2637#2638#0" expanded="true" />
-                <element signature="e#2757#2758#0" expanded="true" />
-                <element signature="e#2824#2825#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/model/Account.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+            <state relative-caret-position="-944">
+              <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClazzServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChapterServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ChapterServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1835#1836#0" expanded="false" />
-                <element signature="e#1884#1885#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChapterService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/ChapterService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -172,8 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ChapterFail</find>
-      <find>limit</find>
       <find>eq</find>
       <find>selectBy</find>
       <find>List_Valid_Where</find>
@@ -202,6 +107,8 @@
       <find>login</find>
       <find>Sys</find>
       <find>selectB</find>
+      <find>aspectj</find>
+      <find>aop</find>
     </findStrings>
     <replaceStrings>
       <replace>All_Columns</replace>
@@ -233,17 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/zqh/service/ClazzAlumnusService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/service/ClazzApplyService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/service/ClazzService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzAlumnusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/admin/ClazzApplyController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/advice/ClazzAlumnusAdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusAdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ClazzController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ChapterController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/web/admin/ChapterApplyController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/ChapterMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/service/AdminService.java" />
@@ -267,7 +163,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapping/ClassAlumnusMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/service/impl/ChapterAlumnusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusController.java" />
         <option value="D:/Program Files/mavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.8.8/jackson-annotations-2.8.8.jar!/com/fasterxml/jackson/annotation/JsonFormat.class" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/ClassAlumnusApplyMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/model/ClazzApply.java" />
@@ -277,13 +172,25 @@
         <option value="$PROJECT_DIR$/src/main/java/zqh/web/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/service/AccountService.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/service/impl/AccountServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/model/Account.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/AlumnusCustomController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/service/impl/AlumnusServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/zqh/web/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapping/AlumnusMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalExceptionHandler.java" />
+        <option value="D:/Program Files/apache-maven-3.3.9/conf/settings.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ChapterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/ClazzController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/commons/Const.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/AccountController.java" />
         <option value="$PROJECT_DIR$/src/main/java/zqh/commons/util/SessionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/AlumnusCustomController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalUserAop.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-service.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring/spring-web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/commons/exception/NoLoginException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/zqh/web/aop/GlobalUserAop.java" />
       </list>
     </option>
   </component>
@@ -335,7 +242,25 @@
             <id />
           </State>
           <State>
+            <id>Android &gt; Lint &gt; Correctness</id>
+          </State>
+          <State>
             <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Gradle</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Maven</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsGradle</id>
           </State>
           <State>
             <id>Spring</id>
@@ -410,26 +335,12 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,10 +363,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapping" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -582,88 +489,31 @@
               <option name="myItemId" value="zqh" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zqh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Alumnus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="zqh" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21149425" />
-    <property name="SearchEverywhereHistoryKey" value="AlumnusMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AlumnusMapper&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AlumnusMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;ClassA&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAl&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAlum&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusMapper.xml&#10;ChapterAlumnusMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterAlumnusApplyMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10; ClassAlumnusApp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClazzAlumnusApply&#9;PSI&#9;JAVA://zqh.dao.ClazzAlumnusApplyDAO&#10;ChapterAlumnusApplyM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;Sess&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/commons/util/SessionUtil.java&#10;ChapterApplyMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ClazzApply&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/ClazzApplyServiceImpl.java&#10;ClazzAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/ClazzAlumnusApplyServiceImpl.java&#10;ChapterAlumnusApplyMap&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;ChapterAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusDAO.java&#10;Adminis&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AdministratorMapper.xml&#10; ChapterApplyMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ChapterAlumnusM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterContr&#9;PSI&#9;JAVA://zqh.web.ChapterController&#10;ChapterMapper&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;ChapterMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterAlumnusMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;AlumnusMap&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;AlumnusDAO&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusApplyDAO.java&#10;ChapterAlumnusApp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;chapterMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;ChapterApplyM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ChapterFailM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterFailMapper.xml&#10;ChapterApplyD&#9;PSI&#9;JAVA://zqh.dao.ChapterApplyDAO&#10;chapterAlumnusm&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;AlumnusM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;ChapterAlum&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusDAO.java&#10;ChapterM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;Alumnu&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/AlumnusServiceImpl.java&#10;AccountMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AccountMapper.xml&#10;Alumnusm&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AccountM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AccountMapper.xml&#10;lomb&#9;FILE&#9;file://D:/Program Files/mavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16.pom&#10;LinkList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;HashMap&#9;FILE&#9;jar://F:/Java/jdk1.8.0_20/src.zip!/java/util/HashMap.java&#10;Concurrent&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;ALUMNUSMAPP&#9;FILE&#9;file://E:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Arounc&#9;FILE&#9;jar://D:/Program Files/mavenRepository/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar!/org/aspectj/lang/annotation/Around.class&#10;Sess&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/commons/util/SessionUtil.java&#10;Const&#9;PSI&#9;JAVA://zqh.commons.Const&#10;AlumnusMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AlumnusMapper&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AlumnusMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;ClassA&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAl&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAlum&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClassAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusMapper.xml&#10;ChapterAlumnusMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterAlumnusApplyMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10; ClassAlumnusApp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ClassAlumnusApplyMapper.xml&#10;ClazzAlumnusApply&#9;PSI&#9;JAVA://zqh.dao.ClazzAlumnusApplyDAO&#10;ChapterAlumnusApplyM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;ChapterApplyMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ClazzApply&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/ClazzApplyServiceImpl.java&#10;ClazzAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/ClazzAlumnusApplyServiceImpl.java&#10;ChapterAlumnusApplyMap&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;ChapterAlumnus&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusDAO.java&#10;Adminis&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AdministratorMapper.xml&#10; ChapterApplyMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ChapterAlumnusM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterContr&#9;PSI&#9;JAVA://zqh.web.ChapterController&#10;ChapterMapper&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;ChapterMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;ChapterAlumnusMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;AlumnusMap&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;AlumnusDAO&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusApplyDAO.java&#10;ChapterAlumnusApp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml&#10;chapterMapp&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;ChapterApplyM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterApplyMapper.xml&#10;ChapterFailM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterFailMapper.xml&#10;ChapterApplyD&#9;PSI&#9;JAVA://zqh.dao.ChapterApplyDAO&#10;chapterAlumnusm&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterAlumnusMapper.xml&#10;AlumnusM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;ChapterAlum&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/dao/ChapterAlumnusDAO.java&#10;ChapterM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/ChapterMapper.xml&#10;Alumnu&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/java/zqh/service/impl/AlumnusServiceImpl.java&#10;AccountMa&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AccountMapper.xml&#10;Alumnusm&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml&#10;AccountM&#9;FILE&#9;file://D:/Workspaces/idea/Alumnus/src/main/resources/mapping/AccountMapper.xml&#10;lomb&#9;FILE&#9;file://D:/Program Files/mavenRepository/org/projectlombok/lombok/1.16.16/lombok-1.16.16.pom&#10;LinkList&#9;PSI&#9;JAVA://java.util.LinkedList&#10;HashMap&#9;FILE&#9;jar://F:/Java/jdk1.8.0_20/src.zip!/java/util/HashMap.java&#10;Concurrent&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap&#10;ALUMNUSMAPP&#9;FILE&#9;file://E:/Workspaces/idea/Alumnus/src/main/resources/mapping/AlumnusMapper.xml" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="zqh.service.impl" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="zqh.web" />
@@ -672,15 +522,12 @@
       <recent name="zqh.service.impl" />
       <recent name="zqh.service" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\idea\Alumnus\src\main\java\zqh\web\advice" />
       <recent name="D:\Workspaces\idea\Alumnus\src\main\java\zqh\service" />
       <recent name="D:\Workspaces\idea\Alumnus\src\main\resources\mapping" />
       <recent name="D:\Workspaces\idea\Alumnus\src\main\java\zqh\model" />
       <recent name="D:\Workspaces\idea\Alumnus\src\main\java\zqh\dao" />
-      <recent name="E:\Workspaces\idea\Alumnus\src\main\java\zqh\web\advice" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1126,7 +973,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Alumnus_2" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Alumnus_3" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
       <predefined_log_file id="Tomcat Catalina" enabled="true" />
@@ -1135,7 +982,7 @@
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="2400" />
+        <option name="DEBUG_PORT" value="11368" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -1239,7 +1086,14 @@
       <workItem from="1515471718175" duration="141000" />
       <workItem from="1515488685983" duration="11370000" />
       <workItem from="1515556470462" duration="18901000" />
-      <workItem from="1515644344217" duration="9554000" />
+      <workItem from="1515644344217" duration="14752000" />
+      <workItem from="1515683491340" duration="452000" />
+      <workItem from="1515683976352" duration="4652000" />
+      <workItem from="1515737777608" duration="1205000" />
+      <workItem from="1515759587984" duration="1770000" />
+      <workItem from="1515761386339" duration="1087000" />
+      <workItem from="1515762501516" duration="2942000" />
+      <workItem from="1515771813955" duration="1416000" />
     </task>
     <servers />
   </component>
@@ -1258,7 +1112,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211919000" />
+    <option name="totallyTimeSpent" value="230641000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1271,12 +1125,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1285,20 +1138,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26448497" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083806" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41789356" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4824462" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43148357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.797282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34120172" sideWeight="0.43870968" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37660944" sideWeight="0.43870968" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24678111" sideWeight="0.5612903" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30839694" sideWeight="0.50664455" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1306,6 +1158,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1316,7 +1169,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1325,243 +1178,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ClassApplyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-          <folding>
-            <marker date="1515427800088" expanded="true" signature="854:965" ph="select from clazz_apply" />
-            <marker date="1515427800088" expanded="true" signature="1077:1235" ph="select from clazz_apply" />
-            <marker date="1515427800088" expanded="true" signature="1593:1742" ph="select from clazz_apply" />
-            <marker date="1515427800088" expanded="true" signature="1862:1960" ph="select count... clazz_apply" />
-            <marker date="1515427800088" expanded="true" signature="3377:3576" ph="update clazz... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ChapterApplyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="30" column="26" lean-forward="false" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <marker date="1515427772596" expanded="true" signature="862:975" ph="select from chapter_apply" />
-            <marker date="1515427772596" expanded="true" signature="1089:1249" ph="select from chapter_apply" />
-            <marker date="1515427772596" expanded="true" signature="1613:1764" ph="select from chapter_apply" />
-            <marker date="1515427772596" expanded="true" signature="1884:1984" ph="select from chapter_apply" />
-            <marker date="1515427772596" expanded="true" signature="3407:3608" ph="update chapt... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/ClazzAlumnusService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/dao/ClazzApplyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="14" lean-forward="false" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/dao/ChapterApplyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ChapterApplyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzApplyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="43" column="33" lean-forward="false" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/ClazzAlumnusApplyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="42" column="23" lean-forward="false" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/dao/ClazzAlumnusApplyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzAlumnusApplyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="44" column="49" lean-forward="false" selection-start-line="44" selection-start-column="49" selection-end-line="44" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusAdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/dao/ChapterAlumnusApplyDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/ChapterAlumnusApplyService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ClassAlumnusMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="52" column="45" lean-forward="true" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
-          <folding>
-            <marker date="1515509948990" expanded="true" signature="2161:2252" ph="select count... clazz_alumnus" />
-            <marker date="1515509948990" expanded="true" signature="2373:2566" ph="select from clazz_alumnus" />
-            <marker date="1515509948990" expanded="true" signature="2670:2785" ph="delete from " />
-            <marker date="1515509948990" expanded="true" signature="3846:4080" ph="update clazz... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ChapterAlumnusMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="102" column="23" lean-forward="false" selection-start-line="102" selection-start-column="23" selection-end-line="102" selection-end-column="23" />
-          <folding>
-            <marker date="1515509445485" expanded="true" signature="2211:2304" ph="select count... chapter_alumnus" />
-            <marker date="1515509445485" expanded="true" signature="2425:2620" ph="select from chapter_alumnus" />
-            <marker date="1515509445485" expanded="true" signature="2728:2849" ph="delete from " />
-            <marker date="1515509445485" expanded="true" signature="3924:4172" ph="update chapt... " />
-            <marker date="1515509445485" expanded="true" signature="4112:4172" ph="update chapt... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ChapterAlumnusApplyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="43" column="61" lean-forward="false" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
-          <folding>
-            <marker date="1515510154789" expanded="true" signature="1032:1199" ph="select disti... chapter_alumnus_apply" />
-            <marker date="1515510154789" expanded="true" signature="1317:1438" ph="select from chapter_alumnus_apply" />
-            <marker date="1515510154789" expanded="true" signature="1521:1761" ph="select , fro... " />
-            <marker date="1515510154789" expanded="true" signature="1885:2054" ph="select count... chapter_alumnus_apply" />
-            <marker date="1515510154789" expanded="true" signature="3345:3463" ph="update chapt... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ChapterAlumnusServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/model/Chapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="75" column="71" lean-forward="false" selection-start-line="75" selection-start-column="71" selection-end-line="75" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="45" column="40" lean-forward="false" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="60" column="64" lean-forward="false" selection-start-line="60" selection-start-column="64" selection-end-line="60" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ChapterAlumnusApplyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="56" column="24" lean-forward="false" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/mavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.8.8/jackson-annotations-2.8.8.jar!/com/fasterxml/jackson/annotation/JsonFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/mavenRepository/com/fasterxml/jackson/core/jackson-annotations/2.8.8/jackson-annotations-2.8.8-sources.jar!/com/fasterxml/jackson/annotation/JsonFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1530">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapping/ClassAlumnusApplyMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1470">
-          <caret line="8" column="63" lean-forward="false" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-          <folding>
-            <marker date="1515581014244" expanded="true" signature="1018:1183" ph="select disti... clazz_alumnus_apply" />
-            <marker date="1515581014244" expanded="true" signature="1299:1418" ph="select from clazz_alumnus_apply" />
-            <marker date="1515581014244" expanded="true" signature="1501:1736" ph="select , fro... " />
-            <marker date="1515581014244" expanded="true" signature="1858:2021" ph="select count... clazz_alumnus_apply" />
-            <marker date="1515581014244" expanded="true" signature="1858:2040" ph="select count... clazz_alumnus_apply" />
-            <marker date="1515581014244" expanded="true" signature="3298:3414" ph="update clazz... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/model/ClazzApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/model/ClazzAlumnusApply.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/model/ChapterApply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1580,7 +1196,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1588,7 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="29" column="39" lean-forward="false" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1599,22 +1213,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/admin/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="63" column="41" lean-forward="false" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/dto/AjaxResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="454">
           <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding>
-            <element signature="e#394#395#0" expanded="false" />
-            <element signature="e#441#442#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1625,19 +1227,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/admin/AlumnusController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="40" column="34" lean-forward="true" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/AlumnusService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1140">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1645,15 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
           <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#590#591#0" expanded="false" />
-            <element signature="e#632#633#0" expanded="false" />
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#747#748#0" expanded="false" />
-            <element signature="e#1647#1648#0" expanded="false" />
-            <element signature="e#1696#1697#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1661,9 +1245,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1671,9 +1252,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1681,19 +1259,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
           <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1835#1836#0" expanded="false" />
-            <element signature="e#1884#1885#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/ClazzServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="514">
           <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1701,23 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
           <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2570#2571#0" expanded="true" />
-            <element signature="e#2637#2638#0" expanded="true" />
-            <element signature="e#2757#2758#0" expanded="true" />
-            <element signature="e#2824#2825#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1725,7 +1280,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1733,26 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/AlumnusCustomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="71" column="50" lean-forward="false" selection-start-line="71" selection-start-column="50" selection-end-line="71" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/AlumnusServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
-          <folding>
-            <element signature="e#1412#1413#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1775,18 +1309,260 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../FCIS/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1380">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/apache-maven-3.3.9/conf/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="151" column="13" lean-forward="false" selection-start-line="151" selection-start-column="13" selection-end-line="151" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/javax/servlet/http/HttpSession.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ClazzAlumnusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="53" column="15" lean-forward="false" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../FCIS/src/main/java/g11/web/advice/GlobalUserAop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/commons/Const.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="65" lean-forward="false" selection-start-line="5" selection-start-column="65" selection-end-line="5" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="53" column="15" lean-forward="false" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/service/impl/AlumnusServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ClazzController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="54" column="63" lean-forward="false" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+        <state relative-caret-position="1020">
+          <caret line="44" column="9" lean-forward="false" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterAlumnusAdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/ChapterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="50" column="15" lean-forward="false" selection-start-line="50" selection-start-column="15" selection-end-line="50" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/AlumnusCustomController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar!/org/aspectj/lang/ProceedingJoinPoint.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="39" lean-forward="false" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/aspectj/aspectjrt/1.8.13/aspectjrt-1.8.13.jar!/org/aspectj/lang/annotation/Around.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/mavenRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1410">
+          <caret line="244" column="28" lean-forward="false" selection-start-line="244" selection-start-column="25" selection-end-line="244" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="53" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5220">
+          <caret line="174" column="20" lean-forward="false" selection-start-line="174" selection-start-column="20" selection-end-line="174" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="37" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="424" column="0" lean-forward="false" selection-start-line="424" selection-start-column="0" selection-end-line="424" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-aop/4.3.8.RELEASE/spring-aop-4.3.8.RELEASE.jar!/org/springframework/aop/framework/CglibAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="518" column="0" lean-forward="false" selection-start-line="518" selection-start-column="0" selection-end-line="518" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/admin/AlumnusController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="125" column="0" lean-forward="false" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="531" column="0" lean-forward="false" selection-start-line="531" selection-start-column="0" selection-end-line="531" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="410" column="0" lean-forward="false" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/mavenRepository/org/springframework/spring-webmvc/4.3.8.RELEASE/spring-webmvc-4.3.8.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="493" column="0" lean-forward="false" selection-start-line="493" selection-start-column="0" selection-end-line="493" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/advice/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-944">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/commons/exception/NoLoginException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/zqh/commons/util/SessionUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/zqh/web/aop/GlobalUserAop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="47" column="11" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="47" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
