@@ -8,7 +8,7 @@ import zqh.model.ClazzAlumnusApply;
 /**
  * 申请加入校友班级相关申请
  */
-public interface ClazzAlumnusApplyService {
+public interface  ClazzAlumnusApplyService {
 
     /**
      * 申请加入某个校友班级

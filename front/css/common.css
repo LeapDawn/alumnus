@@ -1,0 +1,53 @@
+.content-box-large {
+	/*border-radius: 0;*/
+	max-width: 300px;
+	margin: 10px 0;
+}
+
+.tools {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.tools-lf {
+	float: left;
+	width: 400px;
+}
+
+.tools-lf input {
+	width: 100%;
+	border-radius: 4px !important;
+
+}
+
+.tools-rt {
+	width: 200px;
+	float: right;
+}
+
+.tools-rt > span {
+	display: inline-block;
+
+}
+
+.tools-rt button {
+	border-radius: 4px !important;
+}
+
+.tools-rt  > a {
+	display: inline-block;
+	float: right;
+}
+
+.clearfix:before, .clearfix:after {
+	content: '';
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}

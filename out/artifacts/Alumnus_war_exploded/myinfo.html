@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+     <link href="css/bootstrap-editable.css" rel="stylesheet"/>
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendors/form-helpers/css/bootstrap-formhelpers.min.css" rel="stylesheet">
+    <link href="vendors/select/bootstrap-select.min.css" rel="stylesheet">
+    <link href="vendors/tags/css/bootstrap-tags.css" rel="stylesheet">
+
+    <link href="css/forms.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+	     <div class="container">
+	        <div class="row">
+	           <div class="col-md-5">
+	              <!-- Logo -->
+	              <div class="logo">
+	                 <h1><a href="alumnus.html">校友信息系统</a></h1>
+	              </div>
+	           </div>
+	         
+	           <div class="col-md-7">
+	              <div class="navbar navbar-inverse" role="banner">
+	                  <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+	                    <ul class="nav navbar-nav">
+	                      <li class="dropdown">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account<b class="caret"></b></a>
+	                        <ul class="dropdown-menu animated fadeInUp">
+	                            <li><a href="myinfo.html">个人信息</a></li>
+	                            <li><a href="mychapter.html">我的分会</a></li>
+	                            <li><a href="myclazz.html">我的班级</a></li>
+	                            <li><a href="myapply.html">我的申请</a></li>
+		                        <li><a href="password.html">修改密码</a></li>
+		                        <li><a id="logout" href="#">退出</a></li>
+	                        </ul>
+	                      </li>
+	                    </ul>
+	                  </nav>
+	              </div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+	          <ul class="nav">
+	            <!-- Main menu -->
+	           	<li><a href="alumnus.html"><i class="glyphicon glyphicon-list"></i>校友信息</a></li>
+	            <li><a href="chapter.html"><i class="glyphicon glyphicon-stats"></i>校友分会</a></li>
+	            <li><a href="clazz.html"><i class="glyphicon glyphicon-stats"></i>班级</a></li>
+	          </ul>
+	        </div>
+		  </div>
+
+
+		  <div class="col-md-10">
+	  			<div class="row">
+	  				<div class="col-md-6">
+	  					<div class="content-box-large">
+			  				<div class="panel-heading">
+					            <div class="panel-title">个人信息</div>
+					          
+					            <div class="panel-options">
+					              <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+					            </div>
+					        </div>
+			  				<div class="panel-body">
+			  					<form class="form-horizontal" role="form">
+								  <div class="form-group">
+								    <label for="name" class="col-sm-2 control-label">姓名</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="name" disabled="disabled">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="idCard" class="col-sm-2 control-label">身份证号</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="idCard" maxlength="18" disabled="disabled">
+								    </div>
+								  </div>
+								   <div class="form-group">
+								    <label for="studentno" class="col-sm-2 control-label">学号</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="studentno" disabled="disabled">
+								    </div>
+								  </div>
+								   <div class="form-group">
+								    <label for="nation" class="col-sm-2 control-label">民族</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="nation" disabled="disabled">
+								    </div>
+								  </div>
+								   <div class="form-group">
+								    <label for="tel" class="col-sm-2 control-label">联系方式</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="tel" disabled="disabled">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="college" class="col-sm-2 control-label">学院</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="college" disabled="disabled">
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <label for="major" class="col-sm-2 control-label">专业</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="major" disabled="disabled">
+								    </div>
+								  </div>
+								   <div class="form-group">
+								    <label for="nativePlace" class="col-sm-2 control-label">籍贯</label>
+								    <div class="col-sm-10">
+								      <input type="text" class="form-control" id="nativePlace" disabled="disabled">
+								    </div>
+								  </div>
+								  <div class="form-group">
+			  						<label for="birthday" class="col-sm-2 control-label">出生日期</label>
+			  						<div class="col-sm-10">
+			  							<!-- <input type="date" class="form-control" id="inputPassword3"> -->
+			  							<div class="bfh-datepicker" data-format="y-m-d" data-date="today" id="birthday" disabled="disabled"></div>
+			  						</div>
+			  					  </div>
+								  <div class="form-group">
+			  						<label for="enrolDate" class="col-sm-2 control-label">入学日期</label>
+			  						<div class="col-sm-10">
+			  							<!-- <input type="date" class="form-control" id="inputPassword3"> -->
+			  							<div class="bfh-datepicker" data-format="y-m-d" data-date="today" id="enrolDate"
+			  							disabled="disabled"></div>
+			  						</div>
+			  					  </div>
+			  					  <div class="form-group">
+			  						<label for="graduationDate" class="col-sm-2 control-label">毕业日期</label>
+			  						<div class="col-sm-10">
+			  							<!-- <input type="date" class="form-control" id="inputPassword3"> -->
+			  							<div class="bfh-datepicker" data-format="y-m-d" data-date="today" id="graduationDate" disabled="disabled"></div>
+			  						</div>
+			  					  </div>
+								   <div class="form-group">
+								    <label for="political_status" class="col-sm-2 control-label">政治面貌</label>
+								    <div class="col-sm-10">
+								    	<div class="bfh-selectbox" data-name="selectbox3" data-value="" data-filter="false" id="politicalStatus" disabled="disabled">
+								    	  <div data-value=""></div>
+										  <div data-value="中共党员">中共党员</div>
+										  <div data-value="中共预备党员">中共预备党员</div>
+										  <div data-value="共青团员">共青团员</div> 
+										  <div data-value="民革党员">民革党员</div>
+										  <div data-value="民盟盟员">民盟盟员</div>
+										  <div data-value="民建会员">民建会员</div>
+										  <div data-value="民进会员">民进会员</div>
+										  <div data-value="农工党党员">农工党党员</div>
+										  <div data-value="致公党党员">致公党党员</div>
+										  <div data-value="九三学社社员">九三学社社员</div>
+										  <div data-value="台盟盟员">台盟盟员</div>
+										  <div data-value="无党派人士">无党派人士</div>
+										  <div data-value="群众">群众</div>
+										</div>
+								    </div>
+								  </div>
+								  <div class="form-group">
+								    <div class="col-sm-offset-4 col-sm-10">
+								      <button  id="save_alumnus" type="button" class="btn btn-primary" style="display:none">保存</button>
+								      <button  id="update_alumnus" type="button" class="btn btn-primary">修改</button>
+								      <button type="button" class="btn btn-default col-sm-offset-1">
+								      	<a href="alumnus.html">返回</a>
+								      </button>
+								      <button id="cancel" type="button" class="btn btn-default col-sm-offset-1" style="display:none">取消</button>
+								    </div>
+								  </div>
+								</form>
+			  				</div>
+			  			</div>
+	  				</div>
+	  			</div>
+	  		<!--  Page content -->
+		  </div>
+		</div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendors/form-helpers/js/bootstrap-formhelpers.min.js"></script>
+
+    <script src="vendors/select/bootstrap-select.min.js"></script>
+
+    <script src="vendors/tags/js/bootstrap-tags.min.js"></script>
+
+    <script src="vendors/mask/jquery.maskedinput.min.js"></script>
+
+    <script src="vendors/moment/moment.min.js"></script>
+
+    <script src="vendors/wizard/jquery.bootstrap.wizard.min.js"></script>
+
+     <!-- bootstrap-datetimepicker -->
+
+    <script src="vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js"></script> 
+	<script src="js/bootstrap-editable.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="js/publicDom.js"></script>
+    <script type="text/javascript" src="js/myinfo.js"></script>
+    <script type="text/javascript" src="js/logout.js"></script>
+  </body>
+</html>

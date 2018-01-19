@@ -25,12 +25,20 @@ public class GlobalUserAop {
 
     }
 
-    @Pointcut("execution(* zqh.web.*Controller.*(..)) && !execution(* zqh.web.*Controller.*ByAdminOrAccount(..)) && !execution(* zqh.web..*Controller.login(..))")
-    public void accountLoginService() {
+    @Pointcut("execution(* zqh.web.*Controller.*(..)) && !execution(* zqh.web.*Controller.*ByAdminOrAccount(..))" +
+            " && !execution(* zqh.web..*Controller.login(..)) && !execution(* zqh.web..*Controller.signUp(..))" +
+            " && !execution(* zqh.web.*Controller.*WithoutBind(..))")
+    public void accountLoginAndBindService() {
 
     }
 
-    @Pointcut("execution(* zqh.web.*Controller.*ByAdminOrAccount(..)) && !execution(* zqh.web..*Controller.login(..))")
+    @Pointcut("execution(* zqh.web.*Controller.*WithoutBind(..))")
+    public void accountLoginWithoutBindService() {
+
+    }
+
+
+    @Pointcut("execution(* zqh.web.*Controller.*ByAdminOrAccount(..))")
     public void loginService() {
 
     }
@@ -43,13 +51,20 @@ public class GlobalUserAop {
         } catch (NoLoginException e) {
             return AjaxResult.fail(e.getCode(), "");
         }
-//        if (administrator == null) {
-//            return AjaxResult.fail(2,"");
-//        }
         return thisJoinPoint.proceed(thisJoinPoint.getArgs());
     }
 
-    @Around("accountLoginService()")
+    @Around("accountLoginWithoutBindService()")
+    public Object accountLoginWithoutBindValidate(ProceedingJoinPoint thisJoinPoint) throws Throwable {
+        try {
+            accountLoginValidate();
+        } catch (NoLoginException e) {
+            return AjaxResult.fail(e.getCode(), "");
+        }
+        return thisJoinPoint.proceed(thisJoinPoint.getArgs());
+    }
+
+    @Around("accountLoginAndBindService()")
     public Object accountLoginValidate(ProceedingJoinPoint thisJoinPoint) throws Throwable {
         Account account = null;
         try {
@@ -57,9 +72,6 @@ public class GlobalUserAop {
         } catch (NoLoginException e) {
             return AjaxResult.fail(e.getCode(), "");
         }
-//        if (account == null) {
-//            return AjaxResult.fail(1,"");
-//        }
         Integer invalid = SessionUtil.getAlumnusInvalid(session);
         if (invalid == null || invalid == 2 || invalid == 1) {
             return AjaxResult.fail(305,"");
@@ -73,10 +85,14 @@ public class GlobalUserAop {
         Administrator administrator = null;
         try {
             account = accountLoginValidate();
+        } catch (Exception e) {
+        }
+        try {
             administrator = adminLoginValidate();
         } catch (Exception e) {
         }
         if (account != null || administrator != null) {
+            System.out.println("NoLogin================");
             return thisJoinPoint.proceed(thisJoinPoint.getArgs());
         } else {
             return AjaxResult.fail(1,"");

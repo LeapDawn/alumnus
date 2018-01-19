@@ -32,6 +32,7 @@ public class SpAlumnusController {
     @PutMapping("/update")
     public AjaxResult update(@RequestBody Alumnus alumnus) {
         alumnus.setSpecial(true);
+        alumnusService.update(alumnus);
         return AjaxResult.success("更新特殊校友信息成功");
     }
 

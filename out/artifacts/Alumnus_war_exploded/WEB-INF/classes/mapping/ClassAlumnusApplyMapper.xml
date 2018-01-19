@@ -30,7 +30,7 @@
     </select>
     <select id="selectList" resultType="zqh.model.Alumnus">
         select
-        <include refid="Join_Column"/>,
+        <include refid="Join_Column"/>
         from clazz_alumnus_apply caa
         join alumnus a on caa.alumnus = a.id
         where caa.clazz = #{apply.clazz,jdbcType=VARCHAR} and caa.status = 0

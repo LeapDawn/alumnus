@@ -100,7 +100,7 @@
         update clazz_alumnus
         <set>
             <if test="admin != null">
-                #{admin,jdbcType=BIT},
+               admin = #{admin,jdbcType=BIT},
             </if>
         </set>
         where clazz = #{clazz,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}

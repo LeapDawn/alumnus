@@ -26,7 +26,7 @@ public class AlumnusCustomController {
     private AccountService accountService;
 
     @PostMapping("/addition")
-    public AjaxResult save(@RequestBody Alumnus alumnus, HttpSession session) {
+    public AjaxResult saveWithoutBind(@RequestBody Alumnus alumnus, HttpSession session) {
         Account account = SessionUtil.getUser(session);
         if (account != null && account.getAlumnus() == null) {
             alumnus.setSpecial(false);
@@ -42,7 +42,7 @@ public class AlumnusCustomController {
     }
 
     @PutMapping("/update")
-    public AjaxResult update(@RequestBody Alumnus alumnus,  HttpSession session) {
+    public AjaxResult updateWithoutBind(@RequestBody Alumnus alumnus,  HttpSession session) {
         Account account = SessionUtil.getUser(session);
         alumnus.setId(account.getAlumnus());
         alumnusService.update(alumnus);
@@ -67,7 +67,7 @@ public class AlumnusCustomController {
     }
 
     @GetMapping("/info")
-    public AjaxResult getAlumnus(HttpSession session){
+    public AjaxResult getAlumnusWithoutBind(HttpSession session){
         Integer alumnus = SessionUtil.getUserAlumnus(session);
         return AjaxResult.success(alumnusService.selectOne(alumnus));
     }

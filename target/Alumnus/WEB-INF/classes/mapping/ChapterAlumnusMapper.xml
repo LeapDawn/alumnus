@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zqh.dao.ChapterAlumnusDAO">
+    <resultMap id="ChapterAlumnus" type="zqh.model.ChapterAlumnus">
+        <id column="id" jdbcType="INTEGER" property="id"/>
+        <result column="chapter" jdbcType="VARCHAR" property="chapter"/>
+        <result column="alumnus" jdbcType="INTEGER" property="alumnus"/>
+        <result column="admin" jdbcType="BIT" property="admin"/>
+    </resultMap>
+    <sql id="All_Column">
+        id, chapter, alumnus, admin
+    </sql>
+    <sql id="Alumnus_Column">
+        al.id, al.name, al.id_card, al.studentNo, al.nation, al.tel, al.college, al.major, al.birthday, al.enrol_date,
+        al.graduation_date, al.native_place, al.political_status, al.status, al.special
+    </sql>
+    <sql id="List_Where">
+        <where>
+            <if test="chapterAlumnus.chapter != null">
+                and ca.chapter = #{chapterAlumnus.chapter,jdbcType=VARCHAR}
+            </if>
+            <if test="chapterAlumnus.admin != null">
+                and ca.admin = #{chapterAlumnus.admin,jdbcType=BIT}
+            </if>
+        </where>
+    </sql>
+    <select id="selectByChapterAndAlumnus" parameterType="zqh.model.ChapterAlumnus" resultMap="ChapterAlumnus">
+        select distinct
+        <include refid="All_Column"/>
+        from chapter_alumnus
+        <where>
+            <if test="chapter != null and !&quot;&quot;.equals(chapter.trim())">
+                and chapter = #{chapter,jdbcType=VARCHAR}
+            </if>
+            <if test="alumnus != null">
+                and alumnus = #{alumnus,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+    <select id="selectByAlumnus" parameterType="zqh.model.ChapterAlumnus" resultMap="ChapterAlumnus">
+        select distinct
+        <include refid="All_Column"/>
+        from chapter_alumnus
+        <where>
+            <if test="alumnus != null">
+                and alumnus = #{alumnus,jdbcType=INTEGER}
+            </if>
+        </where>
+    </select>
+    <select id="count" parameterType="zqh.model.ChapterAlumnus" resultType="java.lang.Integer">
+        select count(*)
+        from chapter_alumnus ca
+        join alumnus al on ca.alumnus = al.id
+        <include refid="List_Where"/>
+    </select>
+    <select id="selectList" resultType="zqh.model.Alumnus">
+        select
+        <include refid="Alumnus_Column"/>
+        from chapter_alumnus ca
+        join alumnus al on ca.alumnus = al.id
+        <include refid="List_Where"/>
+        limit #{skip}, #{rows}
+    </select>
+    <delete id="deleteByChapterAndAlumnus" parameterType="zqh.model.ChapterAlumnus">
+        delete from chapter_alumnus
+        where chapter = #{chapter,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}
+    </delete>
+    <insert id="insert" parameterType="zqh.model.ChapterAlumnus">
+        insert into chapter_alumnus
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="chapter != null">
+                chapter,
+            </if>
+            <if test="alumnus != null">
+                alumnus,
+            </if>
+            <if test="admin != null">
+                admin,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="chapter != null">
+                #{chapter,jdbcType=VARCHAR},
+            </if>
+            <if test="alumnus != null">
+                #{alumnus,jdbcType=INTEGER},
+            </if>
+            <if test="admin != null">
+                #{admin,jdbcType=BIT},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateAdmin" parameterType="zqh.model.ChapterAlumnus">
+        update chapter_alumnus
+        <set>
+            <if test="admin != null">
+               admin =  #{admin,jdbcType=BIT},
+            </if>
+        </set>
+        where chapter = #{chapter,jdbcType=VARCHAR} and alumnus = #{alumnus,jdbcType=INTEGER}
+    </update>
+</mapper>

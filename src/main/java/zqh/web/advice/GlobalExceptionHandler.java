@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(NoLoginException.class)
     public AjaxResult NoLoginExceptionHandler(NoLoginException e, HttpServletResponse response) {
-        return AjaxResult.fail(1, "登录失败");
+        return AjaxResult.fail(e.getCode(), "");
     }
 
     @ExceptionHandler(DuplicateKeyException.class)

@@ -24,7 +24,7 @@ public class AccountController {
     private AlumnusService alumnusService;
 
     @PostMapping("/register")
-    public AjaxResult addition(@RequestBody Account account, HttpSession session){
+    public AjaxResult signUp(@RequestBody Account account, HttpSession session){
         accountService.save(account);
         session.setAttribute("user", account);
         return AjaxResult.success("注册成功");
@@ -65,11 +65,12 @@ public class AccountController {
     @GetMapping("/logout")
     public AjaxResult logout(HttpSession session){
         session.removeAttribute(Const.SESSION_ACCOUNT);
+        session.removeAttribute(Const.SESSION_ALUMNUS_INVALID);
         return AjaxResult.success("退出登陆成功");
     }
 
     @PutMapping("/bind")
-    public AjaxResult bind(@RequestBody Alumnus alumnus, HttpSession session) {
+    public AjaxResult bindWithoutBind(@RequestBody Alumnus alumnus, HttpSession session) {
         Account user = SessionUtil.getUser(session);
         if (user != null && user.getAccounts() != null){
             accountService.bind(user.getAccounts(), alumnus);
